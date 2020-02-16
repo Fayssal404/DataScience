@@ -1,0 +1,172 @@
+
+
+
+\documentclass{beamer}
+
+\usepackage[utf8]{inputenc}
+
+
+%Information to be included in the title page:
+\title{Outliers}
+\author{Fayssal A.}
+
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Outliers}
+Outliers needs close inspection else it can result in wildly wrong estimations.
+Outlier is an observation that appears far away and diveges from an overall pattern in a sample.
+Values that are very different in magnitude from the others in the feature or target space are called outliers.
+Noise and Outliers can lead to inconsistencies (i.e similar or identical features vectors with much different target values)
+\begin{itemize}{Outliers types}
+    \item[$\bullet$] Univariate:\\
+        -Can be found when we look at distribution of a single variable
+
+    \item[$\bullet$] Multivariate:\\
+        -Can be found when we look at distributions in multi-dimensions
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitles{Outliers causes}
+
+Non natural:
+\begin{enumerate}
+        \item Human errors, errors caused during data collection, recording or entry can cause outliers in data
+        \item Measurment error, when the measurement instrument used turns out to be faulty
+        \item Intentional error, when human under report an action (i.e alcohol consumption...)
+        \item Data pocessing error, when we extract data from multiple sources some manipulation or extraction may lead to outliers in the dataset
+        \item Sampling error, when we mix two separate population
+\end{enumerate}
+
+%    -Natural: %       -When outlier is not artificial
+\end{frame}
+
+\begin{frame}
+\frametitle{Outliers Impact}
+\begin{enumerate}
+        \item Can drastically change the results of the data analysis and statistical modeling
+        \item Increases variance error and reduces the power of statistical tests
+        \item Non-randomly distributed outliers can decrease normality
+        \item Bias or influence estimated with substantive interest
+        \item Impact basic assumption in regression models
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Outliers Detection}
+
+\begin{enumerate}
+    \item Box-plot, Histogram, scatter plot
+    \item Cook Distance (is used only for MLR)
+    \item Replace Outliers with missing values and try to predict it
+
+\end{enumerate}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+\frametitle{Rule of thumb}
+\begin{enumerate}
+        \item Lower & Upper 1.5*IQR whisker
+        \item Use capping methods, value out of range of 5th and 95t percentile can be considered outlier
+        \item Data points, three or more standard deviation away from mean are considered outlier
+        \item Taking the log of a predictor or target variable is useful when there are outliers that can't be filtered out because they are important to the model
+\end{enumerate}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Box-Plot}
+
+\begin{enumerate}
+    \item Simple graphical distribution of a probability distribution (maps a feature value to the probability occurence)
+    \item Box-plot are constructed using interquartile
+\end{enumerate}
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Interquartile Range}
+
+\begin{enumerate}
+    \item Often used to find outliers in data
+    \item Difference between Q3 and Q1
+    \item Q3 and Q1 repsents medians
+\end{enumerate}
+
+\begin{enumerate}
+    \item Q1 is median of n smallest values
+    \item Q3 is median of n largest values
+    \item Q2 is ordinary median
+\end{enumerate}
+
+\begin{enumerate}
+    \item Observation with lower 1.5xIQR whisker, are identified as outliers.\\
+        - All values less then Q1-1.5 x IQR are outliers.
+
+    \item Observation with upper 1.5xIQR whisker, are identified as outliers.\\
+        - All values more then Q3 + 1.5 x IQR are outliers.
+
+\end{enumerate}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Cook Distance}
+
+\begin{enumerate}
+    \item Only used in MLR
+    \item Computes the effect of deleting a given observation
+    \item Represents the sum of all the changes in the regression model when observation "i" is removed from it
+            \begin{equation*}
+                D_i = \frac{\sum_{j=1}^{n}(\hat y_j - \hat y_{j(i)})^2}{p (MSE)^2}
+            \end{equation*}
+            where p is the number of predictors.
+    \item Cut-off values to use for spotting highly influential points.
+\end{enumerate}
+
+Cut-off values
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{What to do with outliers?}
+
+\begin{enumerate}
+    \item Leave dataset noisy
+    \item Delete outliers
+    \item "Fix" the records
+\end{enumerate}
+
+
+What strategy to choose depends on
+\begin{enumerate}
+    \item Knowledge about this domain
+    \item Goals of the model
+    \item How numerous the anomalies are
+    \item What we see in individual record with anomalous values
+\end{enumerate}
+
+\end{frame}
+
+
+
+\end{document}
+
