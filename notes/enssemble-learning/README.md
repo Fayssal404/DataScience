@@ -2,27 +2,30 @@
 # Enssemble Learning
 It contains a basic introduction for different types of enssemble-learning. It discusses different methods, how, when, and where they can be applied.
 
-   -Combining diverse set of learners (individual models)
-   -Use these combination to improve model robustness and predictive accuracy
+   - Combining diverse set of learners (individual models)
+   - Use these combination to improve model robustness and predictive accuracy
 
 ## What causes error in the model
-   -___Bias error:___ 
-        -Quantify how much on an average are the predicted values different from the actual values
-        -High values indicates under-performing model (i.e keeps on missing important trends)
-   -___Variance error:___
-        -Qauntifies the variance of predictions made on different set of observation
-        -High variance indicates over-fitting
+   
+   - ___Bias error:___ 
+        
+        - Quantify how much on an average are the predicted values different from the actual values
+        - High values indicates under-performing model (i.e keeps on missing important trends)
+   - ___Variance error:___
+        
+        - Qauntifies the variance of predictions made on different set of observation
+        - High variance indicates over-fitting
 
 ## Enssemble learning techniques
-   -___Bagging:__
-        -Implement similar learners on small population sample and output the mean of all the predictions
-        -Help to reduce the variance error
+   -___Bagging:___
+      - Implement similar learners on small population sample and output the mean of all the predictions
+      - Help to reduce the variance error
     
-   -___Boosting:___
-        -Iterative technique that adjust weight of an observation based on the last classification
-        -Inaccurate classification leads to weight increasing of this observations and vice versa
-        -Help to decrease bias error and builds string predictive models
-        -It may over-fit on the training data
+   -___Boosting:___    
+      - Iterative technique that adjust weight of an observation based on the last classification
+      - Inaccurate classification leads to weight increasing of this observations and vice versa
+      - Help to decrease bias error and builds string predictive models
+      - It may over-fit on the training data
 
 
 
