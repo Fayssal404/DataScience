@@ -16,8 +16,7 @@
 
 ### 2. Precision
 The fraction of correct predictions for a certain class. Measures how many examples classified as "Positive" class are indeed "Positive". 
-    
-$$\frac{TruePositive}{TruePositive + FalsePositive}$$
+![equation](http://www.sciweavers.org/tex2img.php?eq=%24%24%5Cfrac%7BTruePositive%7D%7BTruePositive%20%2B%20FalsePositive%7D%24%24%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 Confusion matrix second column.
 
