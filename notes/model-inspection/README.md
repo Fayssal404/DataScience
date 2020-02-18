@@ -1,15 +1,18 @@
 
 # Model Inspection
 
-   - ___TruePositive___ number of the true positive samples
+## A. Classification Models
+   - ___TruePositive:___ number of the true positive samples
    - ___Positive:___ number of positive samples
    - ___TrueNegative:___ number of the true negative samples
    - ___Negative:___ number of samples that is negative
-
-
-## A. Classification Models
-
+   
 ### 1. Confusion Matrix
+| Confusion Matrix | Predicted Negative | Predicted Positive  |
+| ------------- |:-------------:| -----:|
+| Real Negative | TN | FP |
+| Real Positive | FN      |   TP |
+
 
 ### 2. Precision
 
