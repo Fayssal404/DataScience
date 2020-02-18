@@ -15,7 +15,11 @@
 
 
 ### 2. Precision
+The fraction of correct predictions for a certain class. Measures how many examples classified as "Positive" class are indeed "Positive". 
+    
+$$\frac{truePositive}{truePositive + falsePositive}$$
 
+Confusion matrix second column.
 ### 3. Recall (or Sensivity)
 
 ### 4. Specifity
