@@ -24,7 +24,6 @@ Confusion matrix second column.
 ### 3. Recall (or Sensivity)
 The fraction of instances of a class that were correctly predicted, if a model predict a certain class most of the time, this class will have a high recall values. This is why other classes will be less likely to be predicted, this will lead to low precision for this class. Assesses how well the classifier can a positive samples. 
 
-$$\frac{TruePositive}{Positive} = \frac{TruePositive}{TruePositive + FalseNegative}$$
 ![equation](http://www.sciweavers.org/tex2img.php?eq=%24%24%5Cfrac%7BTruePositive%7D%7BPositive%7D%20%3D%20%5Cfrac%7BTruePositive%7D%7BTruePositive%20%2B%20FalseNegative%7D%24%24%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 Confusion matrix second row.
@@ -34,7 +33,6 @@ Confusion matrix second row.
 ### 4. Specifity
 Measures how well the classifier can recognize negative samples.
 
-$$\frac{trueNegative}{Negative} = \frac{trueNegative}{trueNegative + falsePositive}$$
 ![equation](http://www.sciweavers.org/tex2img.php?eq=%24%24%5Cfrac%7BtrueNegative%7D%7BNegative%7D%20%3D%20%5Cfrac%7BtrueNegative%7D%7BtrueNegative%20%2B%20falsePositive%7D%24%24%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
 Second row of the confusion matrix.
@@ -42,7 +40,6 @@ Second row of the confusion matrix.
 ### 5. f1 score
 Considers both precision and recall, F1 Score is best if there is some sort of balance between ___Precision___ & ___Recall___ in the system. Which is not the case here.
 
-$$\frac{2* Recall * Precision }{ Recall + Precision}$$
 
 ![equation](http://www.sciweavers.org/tex2img.php?eq=%24%24%5Cfrac%7B2%2A%20Recall%20%2A%20Precision%20%7D%7B%20Recall%20%2B%20Precision%7D%24%24%0A&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
 
