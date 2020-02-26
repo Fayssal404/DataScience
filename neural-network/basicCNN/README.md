@@ -131,6 +131,7 @@ __Filters:__
  - Filter convolves each pixel of width x height from input
 
 __CONVOLVING__
+
 ![gif](https://img-blog.csdnimg.cn/20181129105210462.gif)
 
 *The convolved image size is reduced, once the filter is applied over the original image, this occurs by convolving the image edges*
@@ -142,7 +143,6 @@ __CONVOLVING__
  - Image will shrink at each convolution operation, which may be problematic with a deeper convolutional layer ( contained output will get smaller and smaller)
  - Valuable data is being lost by discarding information at the periphery of the input since the filter does not analyze the edges of the input as much as inside parts of the input
 
-*Solution:*
 __Padding:__
  - Convolved image by specific size filter, result smaller image than the original image
  - Padding adds zeros to the boundary of an image to control the size of the convolution output
@@ -155,13 +155,34 @@ __Padding:__
 
 
 __Stride:__
- - Define number of pixel to move in each spatial detection while performing convolution
+ - Number of pixels to shift the filter as it is moved across the image
+
+## Stride Equale 2
+
+![gif](https://cdn-images-1.medium.com/max/1600/0*1PSMTM8Brk0hsJuF.)
+
 __Pooling Layer:__
+ - Added after a convolutional layer
+ - Requires a __Filter__
+ - Additional parameters such as __strides__ & __padding__ may be provided
  - Summarizes a locality of an image
  - Locality is given by the size of the filter kernel (receptive field)
- - Max-Pooling: maximum pixel intensity of a locality is taken as the repsentative of that locality
- - Average-Pooling: average pixel intensities around a locality is taken as the repsentative of that locality
- - Reduces the spatial dimensions of an image 
+ - Max-Pooling: (Similar to compression?)
+   1. Maximum pixel intensity of a locality is taken as the repsentative of that locality (Check Gif Below)
+   2. Reducing the resolution of a given output of a convolutional layer 
+   3. Reducing the amount of parameters in the network
+   4. Reducing computational load
+   5. May help reducing overfitting
 
-*Backpropagation through a convolution layer is much like propagation for multi-layer Perceptrons network*
-*Only difference, weights connections are sparse since the same weights are shared by different input neighborhoods to create an output feature map*
+ - Average-Pooling: 
+   1. Average pixel intensities around a locality is taken as the repsentative of that locality
+  
+
+
+## Max-Pooling Preserving Most Activated pixels
+
+![gif](https://mlnotebook.github.io/img/CNN/poolfig.gif)
+
+*Notes:*
+ - Backpropagation through a convolution layer is much like propagation for multi-layer Perceptrons network
+ - Only difference, weights connections are sparse since the same weights are shared by different input neighborhoods to create an output feature map
