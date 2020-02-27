@@ -63,13 +63,13 @@ It contains a basic introduction for different types of enssemble-learning. It d
  * Check variation of this methods; Meta-p_i, nonlinear gated experts for time-series, revised modular network for predicting in survival analysis 
 
 
-2. __Meta-combination Methods__
-  - Stacking:
-     - Achieving highest generalization accuracy
-     - Induce which classifiers are reliable and which not
-     - Usually employed to combine models built by different inducers
-     - Use learner to combine output from different learners
-     - Can lead to decrease in bias or variance error
+2. __Meta-combination Methods:__
+     - Stacking:
+           - Achieving highest generalization accuracy
+           - Induce which classifiers are reliable and which not
+           - Usually employed to combine models built by different inducers
+           - Use learner to combine output from different learners
+           - Can lead to decrease in bias or variance error
 
 
 ### General Questions:
