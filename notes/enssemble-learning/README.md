@@ -5,8 +5,10 @@ It contains a basic introduction for different types of enssemble-learning. It d
    - Combining diverse set of learners (individual models)
    - Use these combination to improve model robustness and predictive accuracy
 
-## What causes error in the model
-   
+## Combining multiple decision tree models to form an ensemble learning model (Random Forest)
+![gif](https://miro.medium.com/max/1280/1*xNWNWCylTAmpXdWwqsRIKg.gif)
+
+## What causes error in the model   
    - ___Bias error:___     
       - Quantify how much on an average are the predicted values different from the actual values
       - High values indicates under-performing model (i.e keeps on missing important trends)
@@ -32,10 +34,10 @@ It contains a basic introduction for different types of enssemble-learning. It d
    - Combiner usage is the relation between the enssemble generator and the combiner.
 
 ## Combination methods
-   
-   -There is two main method for combining classifiers:
-      -___Weighting___, individual classifiers perform the same task, comparable success.
-      -___Meta-learning___, 
+  
+   - There is two main method for combining classifiers:
+     - ___Weighting___, individual classifiers perform the same task, comparable success.
+     - ___Meta-learning___, 
     
 
 
@@ -62,7 +64,7 @@ It contains a basic introduction for different types of enssemble-learning. It d
 
 
 2. __Meta-combination Methods__
-    - Stacking:
+  - Stacking:
      - Achieving highest generalization accuracy
      - Induce which classifiers are reliable and which not
      - Usually employed to combine models built by different inducers
