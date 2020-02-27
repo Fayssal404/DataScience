@@ -65,11 +65,11 @@ It contains a basic introduction for different types of enssemble-learning. It d
 
 2. __Meta-combination Methods:__
      - Stacking:
-           - Achieving highest generalization accuracy
-           - Induce which classifiers are reliable and which not
-           - Usually employed to combine models built by different inducers
-           - Use learner to combine output from different learners
-           - Can lead to decrease in bias or variance error
+          - Achieving highest generalization accuracy
+          - Induce which classifiers are reliable and which not
+          - Usually employed to combine models built by different inducers
+          - Use learner to combine output from different learners
+          - Can lead to decrease in bias or variance error
 
 
 ### General Questions:
