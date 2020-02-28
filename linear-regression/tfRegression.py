@@ -43,6 +43,11 @@ class TfRegression:
     def train_model(self, learning_rate=0.001, num_epochs=100, batch_size=50):
         """ Train Regression Model """
         cost_trace = []
+
+
+        # Fix Inputs & output inializer
+        # Pass Batch Sample and compute the new predicted output and parameters
+        # Evaluate loss function with new batch sample
         inputs_ = self.append_bias(self.inputs)
 
         w = tf.Variable(tf.random_normal((self.n_features + 1, 1),
