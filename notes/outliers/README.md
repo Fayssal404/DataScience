@@ -36,7 +36,7 @@ Noise and Outliers can lead to inconsistencies (i.e similar or identical feature
 
 ## D. Outliers Detection
 
-   - Bo-plot, Histogram, scatter plot
+   - Box-plot, Histogram, scatter plot
    - Cook Distance (is used only for MLR)
    - Replace Outliers with missing values and try to predict it
 
