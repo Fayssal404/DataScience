@@ -27,7 +27,7 @@ Moving backwards through the network, updating weights from right to left, in or
 
 __Notes:__
  - ___Weights___ should be updated so as to minimize the *loss function* in an effective way
- - Resulting *Weight* updates will be the mean average for each individual input
+ - Resulting ___Weights__ updates will be the average for each individual input
 
 
 
