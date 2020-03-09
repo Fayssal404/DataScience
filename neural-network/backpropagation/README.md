@@ -1,37 +1,33 @@
 
 # Forward Propagation
- - Feeding the data forward through the network 
- - Repeatively calculating the weighted sum of the previous layers activation output with the corresponding weights
- - Passing the previous sum to the next layer activation function,
- - Repead step 2,3 until reaching output layer
- - Compute *loss* function on output
+ 1. Always moves one direction; it never goes backwards
+ 2. Passing data across the network forward (__Input Layer -> Output Layer__)
+ 3. Apply *activation function* to the weighted sum of previous __layer Output__ 
+ 5. Repeat steps 2,3 until reaching the *Output Layer*
+ 4. Compute *loss function* (__Output - Observed__)
 
-### Forward Propagation
-![gif]()
+### Forward Propagation Processing Data
+![gif](https://miro.medium.com/max/1200/1*kmDpcV6lVVMjuREj-ovC_g.gif)
 
 
 # Back Propagation
- - Methode to propagate error at the output layer backward so that the gradiant so that the gradiants at the preceding layers can be computed easily using the chain rule of derivative 
- - The act of computing *Gradiant Descent* in order to update the *Weights* occures by the Backpropagation process 
- - Computing the *Gradiant Descent* function, is done by computing the derivative of the *Loss* with respects to the *Weights* & *Biases*
- - Move *backwards* through the network
+Moving backwards through the network, updating weights from right to left, in order to move the values from the output nodes in the direction they should be going, in order to help lower the loss
 
-## Intuition 
- 1. *Gradiant Descent* start by looking at the activation output from output nodes
- 2. Update the weights for the connections of the output layer
-    - To achieve this you should
- 3. Moving Backwards through the network, updating weights from right to left, in ordre to move the 
-    values from the outut nodes in the direction they should be going, in order to help lower the loss
+ 0. Feedforward data
+ 1. Process for propagating the output error backwards to the input layer
+ 2. Moving data across the network backward (__Output Layer -> Input Layer__)
+ 3. Update the gradiants of previous layers using the previous __layer Output__
+    - Compute the *loss function* derivative with respect to *Weights* & *Biases*
 
-## Why Backpropagation?
- 1. The output of each layer depends on the *Weights* & *Activation* of previous layer
- 2. Modifying the *Weights* in previous layers those modifications will influence what happens in later layers
- 3. Efficiently update the *Weights* so that the updates are being done in a manner that helps to reduce the loss function most efficiently
- 4. The same process will occure for all the inputs for each batch provided to our network
- 5. Resulting updates of the *Weights* in the network are going to be the average updates calculated for eachindividual inputs
- 6. Average results of each *Weights* are corresponding gradiants for the *Loss* function with respect to each weights
+*(__Gradiant Descent__ computation is necessary in order to update the __Weights__ -> Back propagation)*
 
-![gif](https://thumbs.gfycat.com/FickleHorribleBlackfootedferret-small.gif, 3brown1blue)
-
-### Back Propagation Weights Update
+### Back Propagation Updating Weights
 ![gif](https://hsto.org/files/627/6e1/d36/6276e1d365ba4f8497cd41fb110d7619.gif)
+
+
+__Notes:__
+ - ___Weights___ should be updated so as to minimize the *loss function* in an effective way
+ - Resulting *Weight* updates will be the mean average for each individual input
+
+
+
