@@ -1,23 +1,7 @@
 
-# Affinity Analysis
+# Data Mining
+__Data mining__ is the process of discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems
 
-Help us to determines when objects occur frequently together. This type
-of analysis requires a specific form of data. The aim is to discover
-when occur simultaneously. For example, when two movies are recommended together.
-
-It can be applied to many processes:
-	- Fraud Detection
-	- Customer Segmentation
-	- Softwar Optimization
-	- Product Recommmendations
-
-# Algorithms for affinity analysis
-	
-	- Simple Ranking Rule
-	- Apriori Algorithm
-	- Eclat
-	- FP-growth
-
-
-
-
+# Table of Contents
+1. [Apriori](https://github.com/Fayssal404/DataScience/tree/master/data-mining/Apriori)
+2. [Expectation-Maximisation](https://github.com/Fayssal404/Statistics/tree/master/papers_/paper_EM_Gaussian_mixture) 
