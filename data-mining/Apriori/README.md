@@ -7,8 +7,5 @@ when occur simultaneously. For example, when two movies are recommended together
 
 It can be applied to many processes:
    
-   - Fraud Detection
-   - Customer Segmentation
-   - Softwar Optimization
-   - Product Recommmendations
-	
+   - [Movies Recommendation](https://github.com/Fayssal404/DataScience/tree/master/data-analysis/movie-recommender)
+   - [Google Product Reviews](https://github.com/Fayssal404/DataScience/tree/master/data-analysis/google-reviews)
