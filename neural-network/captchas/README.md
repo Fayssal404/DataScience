@@ -20,7 +20,7 @@ Beating *CAPTCHAS* requires four steps:
 - Recombine letter to form word
 
 # Drawing CAPTCHAS 
-Easy captchas will be generated first, which consist mostly of word images in different fonts and styles. More complex captchas display bluish images or  with Gaussian noise. 
+Easy captchas will be generated first, which consist mostly of word images in different fonts and styles. More complex captchas display bluish images or with Gaussian noise. 
 
 In order to form a classification system for individual letters, it is necessary to have data, therefore a data generator imitating CAPTCHAS photos is available.
 
@@ -32,5 +32,4 @@ __Assumptions:__
 - Build a neural network that will take an image as input and try to predict
 which (single) letter is in the image.
 - Training data consists of generated image letters with each image character being labeled at the letter position alphabetically.
-- Outputs will be 26 values between 0 and 1, higher values indicate a higher 
-likelihood that the associated letter is the letter represented by the input.
+- Resulting output vector of 25 values between 0 and 1, higher values indicate a higher likelihood that the associated letter is the letter represented by the input.
