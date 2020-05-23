@@ -44,6 +44,6 @@ class CaptchasGenerator:
 
     def display_subimages(self, subimages, figsize=(10,3), cmap='gray'):
         f, axes = plt.subplots(1,len(subimages), figsize=figsize)
-        for subimage in range(len(subimages)):
-            axes[i].imshow(subimage[i], cmap=cmap)
+        for i in range(len(subimages)):
+            axes[i].imshow(subimages[i], cmap=cmap)
         return f, axes
