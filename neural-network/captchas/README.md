@@ -1,11 +1,14 @@
-# Beating CAPTCHAS
+# Beating CAPTCHA
 Extracting text from images by using neural networks for predicting each letter.
 - Algorithms to detect & understand images
 - Understanding & recognizing objects
 
 __Objective:__ creating a program that can beat *CAPTCHAS*.
 
-# CAPTCHAS
+## EXAMPLES OF DIFFERENT CAPTCHA
+![gif](https://androidportal.zoznam.sk/wp-content/uploads/2017/06/15/captcha.gif)
+
+# CAPTCHA
 Completely Automated Public Turing Test to tell Computers and Humans aparts.
 Captachs:
 - Easy for humans to solve
@@ -19,7 +22,7 @@ Beating *CAPTCHAS* requires four steps:
 - Classify individual letters
 - Recombine letter to form word
 
-# Drawing CAPTCHAS 
+# Drawing CAPTCHA 
 Easy captchas will be generated first, which consist mostly of word images in different fonts and styles. More complex captchas display bluish images or with Gaussian noise. 
 
 In order to form a classification system for individual letters, it is necessary to have data, therefore a data generator imitating CAPTCHAS photos is available.
