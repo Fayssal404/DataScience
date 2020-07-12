@@ -1,12 +1,15 @@
 
 # Convolutional Neural Network
-
-Convolutional Neural Networks works best with unstructured data such as images, text, audio and speech.
-It do a good job whenever there is a topology associated with the data. It's inspired by *multi-layer Perceptrons*, it impose local connectivity constraints between neurons of adjacent layers. It process data through the convolution operation. 
+- Inspired by *multi-layer Perceptrons*
+- Works best with unstructured data such as images, text, audio and speech
+- Perform well whenever there is a topology associated with the data
+- Impose local connectivity constraints between neurons of adjacent layers
+- Process data through the convolution operation 
+- Detect features based on filters learned by the CNN through training
 
 
 ## Linear Shift Invariant (LSI) Systems
-The system properties should satisfy the following constraints:
+System properties should satisfy the following constraints:
  - Scaling
  - Superposition
  - Time invariant
@@ -18,12 +21,10 @@ The impulse response of a system can ;
  - Be known
  - Be determined from the system by noting down its response to an impulse function
 
-### What's a Convolution measures?
+### Convolution Measures
 *"Convolution measures the degree of overlap between one function and the reversed and translated version of another function"*
 
-
-
-## Analog & Digital Signals
+### Analog & Digital Signals
 
 Any quantity of interest that shows variation in time &/or space represents a signal. So a signal is a function of time &/or space.
 
@@ -46,46 +47,40 @@ Image-Processing filters are;
 *Based on the choice of image-processing filter, the nature of the output images will vary.*
 
 
-## Image Processing Filters
-It doesn't matter which pixel location one chooses as the origin for the image signal while doing convolution.
+### Image Processing Filters
+- Different filters can detect different features from an image
+- During Training process CNN learns the values of these filters
+- Features extracted from the image depend on the number of filters
 
+[//]: # (It doesn't matter which pixel location one chooses as the origin for the image signal while doing convolution.)
+
+### Filters
 1. __Mean Filter:__
  - Low-pass filter that computes the local average of the pixel intensities at any specific point
  - Impulse response is a square matrix
  - Reduce the noise in an image 
  - White noise of the zero mean will be suppressed
 
-2.__Median Filter:__
+2. __Median Filter:__
  - Replaces each pixel in a neighborhoods with the median pixel intensity in that neighborhood based on the filter size 
  - Good for removing salt & pepper noise 
  - Salt & pepper nooise is presented as the form of black & white pixels (caused by sudden disturbances while capturing the images)
 
-3.__Gaussian Filter:__
+3. __Gaussian Filter:__
  - Impulse function are distributed normally around the origin
  - Weight is highest at the center of the filter
  - Reduce noise by suppressing the high-frequency components
  - May ends up producing a blurred image (Gaussian blur)
  - Substract blurred image from the original image to get the high-frequency component of the image  
 
-4.__Gradiant-based Filter:__
+4. __Gradiant-based Filter:__
 
-5.__Sobel Edge-Detection Filter:__
+5. __Sobel Edge-Detection Filter:__
  - Horizontal Sobel filter detects edges in the horizontal direction
  - Vertical Sobel filter detects edges in the vertical direction 
  - Both previous filter attenuate the low frequencies from the signals
  - Capture only the high-frequency components within the image
  - Edges are presented on the boundary between two regions in an image (first step in retrieving info from images)
-
-## Convolution Neural Networks
-
- - Based on the convolution of images
- - Detect features based on filters learned by the CNN through training
- - Used for analysis images
- - Used for classification problems
-
-Through the training of the *CNN* the algorithm,
- - Learns Image-Processing filters
- - Detects patterns & make sense of them
 
 __Supervised Learning:__ 
  - Filters are learned such a way that the overall cost function is reduced as much as possible
@@ -94,11 +89,7 @@ __Supervised Learning:__
  - Third layer and beyond learn much more complicated features based on the featues generated in the previous layers
 
 
-## *CNN* Architectures 
- - Input layer 
- - Hidden layers (Convolutional layers), they are the basis of the *CNN*
- - Pooling layer
-
+### Convolution Neural Networks Architectures
 *Layers combinations are stacked one after another*
 
 __Input Layer:__
@@ -109,7 +100,6 @@ __Input Layer:__
     3. Dimension Four: Different channels (colored image channels are Red, Green and Blue)
 
 __Convolutional Layer:__
- - Tensorflow support both 2D & 3D convolutions
  - Output feature maps are 2D convolved with 2D filters of the size specified
  - Deeper the convolutional layer in the network, more complex features and patterns are learned
  - Requires specifying the number and size of __filters__ that the layer must have
@@ -176,7 +166,7 @@ __Pooling Layer:__
 
  - Average-Pooling: 
    1. Average pixel intensities around a locality is taken as the repsentative of that locality
-  
+
 
 
 ## Max-Pooling Preserving Most Activated pixels
