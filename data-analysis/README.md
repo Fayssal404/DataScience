@@ -4,5 +4,5 @@ Investigating various real-world datasets using a variety of machine learning an
 ### A. Machine Learning
 
 ### B. Data Mining
-- [Movie Recommendation](https://github.com/Fayssal404/DataScience/tree/master/data-analysis/movie-recommender)
-- [Google Travel Reviews](https://github.com/Fayssal404/DataScience/tree/master/data-analysis/google-reviews)
+- [Movie Recommendation System](https://github.com/TheAlgorisTech/DataScience/blob/master/data-analysis/movie-recommender/Untitled.ipynb)
+- [Google Travel Reviews](https://github.com/TheAlgorisTech/DataScience/blob/master/data-analysis/google-reviews/Untitled.ipynb)
