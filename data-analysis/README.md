@@ -6,3 +6,6 @@ Investigating various real-world datasets using a variety of machine learning an
 ### B. Data Mining
 - [Movie Recommendation System](https://github.com/TheAlgorisTech/DataScience/blob/master/data-analysis/movie-recommender/Untitled.ipynb)
 - [Google Travel Reviews](https://github.com/TheAlgorisTech/DataScience/blob/master/data-analysis/google-reviews/Untitled.ipynb)
+
+## C. Data Visualization
+- [Interactive Gapminder](https://github.com/TheAlgorisTech/DataScience/tree/master/data-analysis/gapminder)
