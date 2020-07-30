@@ -1,0 +1,85 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>slider.py example</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.1.min.js" integrity="sha384-JpP8FXbgAZLkfur7LiK3j9AGBhHNIvF742meBJrjO2ShJDhCG2I1uVvW+0DUtrmc" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="9e027f95-2ece-44d0-9d71-4235408e5b98" data-root-id="1003"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1133">
+          {"b0cd9eaa-b03f-47db-8755-0208c21993f9":{"roots":{"references":[{"attributes":{"background_fill_color":"black","below":[{"id":"1012"}],"center":[{"id":"1015"},{"id":"1019"},{"id":"1036"}],"left":[{"id":"1016"}],"plot_height":400,"plot_width":800,"renderers":[{"id":"1028"}],"right":[{"id":"1036"}],"title":{"id":"1030"},"toolbar":{"id":"1020"},"toolbar_location":"above","x_range":{"id":"1004"},"x_scale":{"id":"1008"},"y_range":{"id":"1006"},"y_scale":{"id":"1010"}},"id":"1003","subtype":"Figure","type":"Plot"},{"attributes":{},"id":"1008","type":"LogScale"},{"attributes":{"data":null,"x":[60011,1318683096],"y":[10,60]},"id":"1022","type":"LinearInterpolator"},{"attributes":{"label":{"field":"continent"},"renderers":[{"id":"1028"}]},"id":"1037","type":"LegendItem"},{"attributes":{},"id":"1032","type":"BasicTickFormatter"},{"attributes":{"num_minor_ticks":10},"id":"1013","type":"LogTicker"},{"attributes":{"axis":{"id":"1012"},"ticker":null},"id":"1015","type":"Grid"},{"attributes":{"text":""},"id":"1030","type":"Title"},{"attributes":{"axis":{"id":"1016"},"dimension":1,"ticker":null},"id":"1019","type":"Grid"},{"attributes":{"factors":["Asia","Europe","Africa","Americas","Oceania"],"palette":["#2b83ba","#abdda4","#ffffbf","#fdae61","#d7191c"]},"id":"1023","type":"CategoricalColorMapper"},{"attributes":{"end":100000,"start":100},"id":"1004","type":"Range1d"},{"attributes":{"format":"$0"},"id":"1038","type":"NumeralTickFormatter"},{"attributes":{"formatter":{"id":"1032"},"ticker":{"id":"1017"}},"id":"1016","type":"LinearAxis"},{"attributes":{},"id":"1017","type":"BasicTicker"},{"attributes":{"data":{"continent":["Asia","Europe","Africa","Africa","Americas","Oceania","Europe","Asia","Asia","Europe","Africa","Americas","Europe","Africa","Americas","Europe","Africa","Africa","Asia","Africa","Americas","Africa","Africa","Americas","Asia","Americas","Africa","Africa","Africa","Americas","Africa","Europe","Americas","Europe","Europe","Africa","Americas","Americas","Africa","Americas","Africa","Africa","Africa","Europe","Europe","Africa","Africa","Europe","Africa","Europe","Americas","Africa","Africa","Americas","Americas","Asia","Europe","Europe","Asia","Asia","Asia","Asia","Europe","Asia","Europe","Americas","Asia","Asia","Africa","Asia","Asia","Asia","Asia","Africa","Africa","Africa","Africa","Africa","Asia","Africa","Africa","Africa","Americas","Asia","Europe","Africa","Africa","Asia","Africa","Asia","Europe","Oceania","Americas","Africa","Africa","Europe","Asia","Asia","Americas","Americas","Americas","Asia","Europe","Europe","Americas","Africa","Europe","Africa","Africa","Asia","Africa","Europe","Africa","Asia","Europe","Europe","Africa","Africa","Europe","Asia","Africa","Africa","Europe","Europe","Asia","Asia","Africa","Asia","Africa","Americas","Africa","Europe","Africa","Europe","Americas","Americas","Americas","Asia","Asia","Asia","Africa","Africa"],"country":["Afghanistan","Albania","Algeria","Angola","Argentina","Australia","Austria","Bahrain","Bangladesh","Belgium","Benin","Bolivia","Bosnia and Herzegovina","Botswana","Brazil","Bulgaria","Burkina Faso","Burundi","Cambodia","Cameroon","Canada","Central African Republic","Chad","Chile","China","Colombia","Comoros","Congo, Dem. Rep.","Congo, Rep.","Costa Rica","Cote d'Ivoire","Croatia","Cuba","Czech Republic","Denmark","Djibouti","Dominican Republic","Ecuador","Egypt","El Salvador","Equatorial Guinea","Eritrea","Ethiopia","Finland","France","Gabon","Gambia","Germany","Ghana","Greece","Guatemala","Guinea","Guinea-Bissau","Haiti","Honduras","Hong Kong, China","Hungary","Iceland","India","Indonesia","Iran","Iraq","Ireland","Israel","Italy","Jamaica","Japan","Jordan","Kenya","Korea, Dem. Rep.","Korea, Rep.","Kuwait","Lebanon","Lesotho","Liberia","Libya","Madagascar","Malawi","Malaysia","Mali","Mauritania","Mauritius","Mexico","Mongolia","Montenegro","Morocco","Mozambique","Myanmar","Namibia","Nepal","Netherlands","New Zealand","Nicaragua","Niger","Nigeria","Norway","Oman","Pakistan","Panama","Paraguay","Peru","Philippines","Poland","Portugal","Puerto Rico","Reunion","Romania","Rwanda","Sao Tome and Principe","Saudi Arabia","Senegal","Serbia","Sierra Leone","Singapore","Slovak Republic","Slovenia","Somalia","South Africa","Spain","Sri Lanka","Sudan","Swaziland","Sweden","Switzerland","Syria","Taiwan","Tanzania","Thailand","Togo","Trinidad and Tobago","Tunisia","Turkey","Uganda","United Kingdom","United States","Uruguay","Venezuela","Vietnam","West Bank and Gaza","Yemen, Rep.","Zambia","Zimbabwe"],"gdpPercap":{"__ndarray__":"em8MAZBbiECDMLd7OQSZQKMG0zAEIqNAQ+GzdTiBq0CCO1CnUBe3QBl47j3Mm8NAaM76lBP5t0BtW5TZikXDQOVkPRD0YYVAdjHNdI1LwEA0gLdAApuQQEs49Ban6qRALaOi+0NsjkDg4Szb7ZmKQKGhf4LjeaBA7tKGw5IYo0C1YPO7CvqAQNVReku+NHVAvgeeMYIHd0ALmMCtq1KSQF6FlJ+UM8ZAxXWMKz69kEAYesToqWqSQF/x1CP1x65AA1q6gi0HeUDN59ztOsCgQLdB7bf2O5FAPkrbrlZkiEBLBoAqPpugQIYGYtkEhqRAiudsAWGylUCzQSYZeV6oQL1vfO2J0rVARIts5yPcukD5SbVPMe7CQBniWBcP26RAAWcpWd7WlUA5DOavOISrQAmnBS9KK5ZA63O1FZvQp0DWnHI7Snp3QFUImoUMj3RAJyFHKVeidkBNSdbhhBi5QMXkDTDPdbtAXf5D+nnFsEBmsJjHsFN+QOUR3Egd6LtAfWAiOWR6jEAZOnZQYZWrQAK+27x5+KJAqCYc1STjf0Cughjomr1yQIJy2753wZxA2SJpN9oloUCQv7So19ynQIWTNH+sj7RAp0HRPLBjvEDhqZGnhhSBQFixUwd0bYdA3PC76aa2p0Do+j4cxCGwQCdok8NHWrRAp3hcVAvtr0CDu7N2Z0OzQCJqos8PpaZAQWFQpukhqUBSgCiYoSuYQEc2V81TrIpAz9iXbBwBkUBdF35wXhqQQGx4eqXldfpAy7xV183iskCs77IViq1yQOOx+n6V/IFAfgBSmxinokB+VwT/C4yWQHnDIiukEndAV19dFYicnEAi3t9FZEV8QFCWEGLtOIdAPBbbpNK/nkBmS1ZFQCyrQPC/leyIlIhAA+/k0yuvpEDJcad00GCaQDM/7aZqSH1AAAAAAACwdEDJkjmWj++iQC+3IADtDoFA+pekMsl2wUDOFDqvSZ7EQORqZFe6UKhAGcdI9gjPh0C6+NueINWQQAnE6/q1t8NAKSSZ1euQnEASIFTzxmSFQB1XI7vCYKNA+WwdHDyBnkAIOe//C12tQMKjjSOG45NADa1Ozqh6r0AkgJvFo/inQGKE8GjrE6hAoOBiRcU9pUC78IPzOZGoQMX/wpcu1X5AXOffLqt8i0ARUOEIjju5QOmY84xtqZZAbKzEPOv6q0AbV21ITX6LQNl4sMVGFqJAqiwKu6jSs0DnxYmvCnewQKvMlNb/vpFA9Wvrp0t1skCZE7TJEfStQPfpeMwg7pBAeESF6vY/mUBLAz+qgfGRQBdp4h3sp8BAEoPAyh3HzEDuk6MA8a2ZQNCZtKnK25JAVkwAWTNlhkAD9occYa6HQIgBASF43opAvJUlOouep0DbF9AL5/GWQDQWTWdnxJ5AeZCeIgf2hkC5HRoWwX3DQAglzLQ9U8tAZ7RVScRUtkCeCyO9zAm+QKXnzCyI6IJA401+i16ul0Ahz4mYvW2IQK+ytimO7ZFAjn6PVSVueUA=","dtype":"float64","shape":[142]},"lifeExp":{"__ndarray__":"kxgEVg7NPEA9CtejcJ1LQGDl0CLbiUVApHA9CtcDPkCuR+F6FD5PQEjhehSuR1FAMzMzMzOzUEDUeOkmMXhJQMuhRbbzvUJAAAAAAAAAUUAGgZVDixxDQKJFtvP9NERAKVyPwvXoSkBWDi2ync9HQEw3iUFgdUlAzczMzMzMTUCamZmZmfk/QIcW2c73g0NATDeJQWC1Q0Bt5/up8UJDQAAAAAAAMFFAJQaBlUO7QUCyne+nxgtDQI/C9ShcX0tAAAAAAAAARkD8qfHSTVJJQOxRuB6FW0RA/Knx0k2SQ0CS7Xw/NQ5FQO58PzVemkxAkxgEVg49REB7FK5H4ZpOQNrO91PjtU1ASOF6FK63UEBSuB6F67FRQA4tsp3vZ0FAEVg5tMj2RkAEVg4tsi1IQPyp8dJN8kRAqMZLN4mhRkAEVg4tsj1BQBFYObTI9kFARIts5/sJQUAzMzMzM6NQQArXo3A92lBAqvHSTWKAQkAAAAAAAAA+QAAAAAAA4FBAT42XbhKTRUDXo3A9CndQQG3n+6nxAkVAy6FFtvPNQEAAAAAAAEBAQCcxCKwcykJA2/l+arz0REB7FK5H4XpOQFK4HoXrAVBAj8L1KFwfUkA6tMh2vq9CQJZDi2znu0JArBxaZDtvRkApXI/C9ahGQArXo3A9ulBAKVyPwvVYUEBcj8L1KHxQQKRwPQrXQ01ApHA9CteDT0BOYhBYOZRFQMP1KFyPIkVAu0kMAisHSUBEi2zn+7lHQLgehetRyEtAEVg5tMj2S0CMbOf7qRFFQD0K16NwPUNABoGVQ4tcRUC6SQwCK1dCQFTjpZvEIEJAJQaBlUM7SEBI4XoUrtdAQC/dJAaBRURAku18PzV+SUChRbbz/WRJQKwcWmQ7H0VAoUW28/2UTUA6tMh2vm9FQO+nxks3ST9ARrbz/dQoQkDNzMzMzNxEQGq8dJMYFEJAuB6F61EIUkApXI/C9VhRQNR46SYxKEVARrbz/dS4QkC28/3UeClCQHsUrkfhKlJARIts5/vJQkAshxbZzrdFQJzEILBymEtAT42XbhJTT0D6fmq8dPNFQMZLN4lB4EdASOF6FK6nTkApXI/C9ehNQFK4HoXrEVBA6SYxCKxcSkBmZmZmZoZOQAAAAAAAAERAQDVeukk8R0AAAAAAAPBDQN0kBoGVo0JAc2iR7Xz/TEDb+X5qvFQ+QKabxCCwMk5A16NwPQoXUEAUrkfhemRQQHe+nxovfUBA/dR46SaBRkBcj8L1KDxQQJZDi2zny0xA4XoUrkdRQ0BqvHSTGLREQNejcD0K91FASOF6FK5nUUAbL90kBvFGQAAAAAAAQE1A7FG4HoWbREAGgZVDi2xJQD81XrpJTENAzczMzMyMTUDNzMzMzExGQHsUrkfhykVAd76fGi/9Q0DsUbgehUtRQFyPwvUoHFFABoGVQ4uEUEAlBoGVQ4tLQNv5fmq8NERAFK5H4XqURUCgGi/dJEZAQL+fGi/dBEVAfT81Xro5SEA=","dtype":"float64","shape":[142]},"pop":[8425333,1282697,9279525,4232095,17876956,8691212,6927772,120447,46886859,8730405,1738315,2883315,2791000,442308,56602560,7274900,4469979,2445618,4693836,5009067,14785584,1291695,2682462,6377619,556263527,12350771,153936,14100005,854885,926317,2977019,3882229,6007797,9125183,4334000,63149,2491346,3548753,22223309,2042865,216964,1438760,20860941,4090500,42459667,420702,284320,69145952,5581001,7733250,3146381,2664249,580653,3201488,1517453,2125900,9504000,147962,372000000,82052000,17272000,5441766,2952156,1620914,47666000,1426095,86459025,607914,6464046,8865488,20947571,160000,1439529,748747,863308,1019729,4762912,2917802,6748378,3838168,1022556,516556,30144317,800663,413834,9939217,6446316,20092996,485831,9182536,10381988,1994794,1165790,3379468,33119096,3327728,507833,41346560,940080,1555876,8025700,22438691,25730551,8526050,2227000,257700,16630000,2534927,60011,4005677,2755589,6860147,2143249,1127000,3558137,1489518,2526994,14264935,28549870,7982342,8504667,290243,7124673,4815000,3661549,8550362,8322925,21289402,1219113,662850,3647735,22235677,5824797,50430000,157553000,2252965,5439568,26246839,1030585,4963829,2672000,3080907],"year":[1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952,1952]},"selected":{"id":"1048"},"selection_policy":{"id":"1047"}},"id":"1001","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":"auto","active_tap":"auto","tools":[{"id":"1002"}]},"id":"1020","type":"Toolbar"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"field":"continent","transform":{"id":"1023"}},"line_alpha":{"value":0.6},"line_color":{"value":"white"},"size":{"field":"pop","transform":{"id":"1022"},"units":"screen"},"x":{"field":"gdpPercap"},"y":{"field":"lifeExp"}},"id":"1025","type":"Circle"},{"attributes":{"end":100},"id":"1006","type":"Range1d"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"field":"continent","transform":{"id":"1023"}},"line_alpha":{"value":0.1},"line_color":{"value":"white"},"size":{"field":"pop","transform":{"id":"1022"},"units":"screen"},"x":{"field":"gdpPercap"},"y":{"field":"lifeExp"}},"id":"1026","type":"Circle"},{"attributes":{"callback":null,"show_arrow":false,"tooltips":"@country"},"id":"1002","type":"HoverTool"},{"attributes":{},"id":"1047","type":"UnionRenderers"},{"attributes":{"source":{"id":"1001"}},"id":"1029","type":"CDSView"},{"attributes":{},"id":"1048","type":"Selection"},{"attributes":{"fill_alpha":{"value":0.6},"fill_color":{"value":"white"},"line_alpha":{"value":0.6},"line_color":{"value":"white"},"size":{"field":"pop","transform":{"id":"1022"},"units":"screen"},"x":{"field":"gdpPercap"},"y":{"field":"lifeExp"}},"id":"1027","type":"Circle"},{"attributes":{},"id":"1010","type":"LinearScale"},{"attributes":{"data_source":{"id":"1001"},"glyph":{"id":"1025"},"hover_glyph":{"id":"1027"},"muted_glyph":null,"nonselection_glyph":{"id":"1026"},"selection_glyph":null,"view":{"id":"1029"}},"id":"1028","type":"GlyphRenderer"},{"attributes":{"border_line_color":null,"items":[{"id":"1037"}],"location":[0,200]},"id":"1036","type":"Legend"},{"attributes":{"formatter":{"id":"1038"},"ticker":{"id":"1013"}},"id":"1012","type":"LogAxis"}],"root_ids":["1003"]},"title":"Bokeh Application","version":"2.0.1"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1133').textContent;
+                  var render_items = [{"docid":"b0cd9eaa-b03f-47db-8755-0208c21993f9","root_ids":["1003"],"roots":{"1003":"9e027f95-2ece-44d0-9d71-4235408e5b98"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>

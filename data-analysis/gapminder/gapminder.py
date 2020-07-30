@@ -9,9 +9,7 @@ from bokeh.models import (LinearInterpolator,
 from bokeh.layouts import column
 from bokeh.palettes import Spectral5
 from bokeh.io import show, curdoc
-from bokeh.plotting import figure
-
-from ipywidgets import interact
+from bokeh.plotting import figure, output_file, save
 
 data = pd.read_csv('../../data/gapminder/gapminder.tsv', sep='\t', index_col = 'year')
 
@@ -66,9 +64,10 @@ def update(attr, old, new):
     fig.title.text = str(year)
 
 
-print(data.index.min())
 slider = Slider(start = data.index.min(), end = data.index.max(), step = 1, title = 'Year')
 slider.on_change('value', update)
 
 layout = column(fig, slider)
 curdoc().add_root(layout)
+output_file("slider.html", title="slider.py example")
+save(fig)
