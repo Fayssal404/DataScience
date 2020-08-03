@@ -1,11 +1,8 @@
-
 import cv2
-
-
+import tensorflow as tf
 
 
 class CNN:
-    
 
     def __init__(self):
 
@@ -13,7 +10,6 @@ class CNN:
         self.input_width = 28
 
         self.n_classes =10 
-        
         # Image Input
         self.x = tf.placeholder(tf.float32, [None, self.input_height * self.input_width])
 
@@ -32,9 +28,7 @@ class CNN:
             wc2 = tf.Variable(tf.random_normal([filter_height, filter_width, self.depth_out1, self.depth_out2])),
             wd1 = tf.Variable(tf.random_normal([(input_height//4)* (input_heigh//4) * seld.depth_out2, 1024])),
             out = tf.Variable(tf.random_normal([1024, self.n_classes])))
-    
     def initialize_biases(self):
-        
         return dict(bc1 = tf.Variable(tf.random_normal([64])),
            bc2 = tf.Variable(tf.random_normal([128])),
            bd1 = tf.Variable(tf.random_normal([1024])),
